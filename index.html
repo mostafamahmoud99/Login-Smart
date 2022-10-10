@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="login shadow">
+      <h1 class="mb-4">Smart Login System</h1>
+      <input
+        type="text"
+        id="loginEmail"
+        class="form-control my-2"
+        placeholder="Enter Email"
+      />
+      <div id="emailValid" class="alert">user name is't valid</div>
+
+      <div class="input-icons">
+      <i class="fa-solid fa-eye eye"></i>
+      <input
+        type="password"
+        id="loginpass"
+        class="form-control my-2"
+        placeholder="Enter Password"
+      />
+    </div>
+      <div id="passValid" class="alert">user password is't valid</div>
+
+      <p id="checkInputs" class="text-danger d-none">
+        Email or password is invalid
+      </p>
+      <p id="fillMsg" class="text-danger d-none">fill inputs first</p>
+      <a class="btn" id="loginBtn">Login</a>
+      <p class="my-3">
+        Don’t have an account? <a href="signup.html">Sign up</a>
+      </p>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
